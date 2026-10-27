@@ -47,7 +47,7 @@ h1 {
     padding: 16px;
 }
 
-.info h2 {
+.info h3 {
     margin-top: 0;
 }
 
@@ -91,7 +91,7 @@ nav a {
 
 .board {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 .hero {

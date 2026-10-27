@@ -109,11 +109,34 @@ nav a {
   flex-direction: column;
   justify-content: center;
 }
+   :root {
+  --gap: 20px;
+}
+    .detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+
+.detail img {
+  width: 100%;
+}
+    .detail-page {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("https://image.tmdb.org/t/p/w1280/xKsnZDERG1dk95wuZ5q9iks3OL3.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+
 @media (min-width: 600px) {
   nav ul {
     flex-direction: row;
     gap: 20px;
   }
+    .detail {
+  grid-template-columns: 1fr 2fr;
+}
 
   .board {
     grid-template-columns: repeat(2, 1fr);
@@ -125,6 +148,7 @@ nav a {
     min-height: 60vh;
   }
 
+
   .hero h2 {
     font-size: 3rem;
   }
@@ -133,3 +157,4 @@ nav a {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+ 

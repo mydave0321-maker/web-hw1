@@ -114,6 +114,10 @@ nav a {
     flex-direction: row;
     gap: 20px;
   }
+
+  .board {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -123,5 +127,9 @@ nav a {
 
   .hero h2 {
     font-size: 3rem;
+  }
+
+  .board {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
